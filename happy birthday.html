@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>HAPPY BIRTHDAY</title>
+  <link rel="stylesheet" href="happy bday.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+  <section>
+    <h1 style="font-size: 100px;">SCROLL DOWN IDIOT</h1>
+  </section>
+<section ><button onclick="playMusic()" class="buttons">Play Music</button>
+  <p>hint: press on the pictures</p>
+</section>
+  <section>
+    <h1>Alex's BIRTHDAY</h1>
+    <img src="images/Alex3.jpg" alt="" onclick="toggleModal('The autistic child - Alex')">
+    <img src="images/Alex4.jpg" alt="" onclick="toggleModal('The autistic child - Alex')">
+  </section>
+  <section>
+    <h1>THE STUPID LOVERS</h1>
+    <img src="images/Alex1.jpg" alt="" onclick="toggleModal('The autistic child - Alex')">
+    <img src="images/abdul1.webp" alt="" onclick="toggleModal('Im not gay - Abdul')">
+    <img src="images/Alex2.jpg" alt="" onclick="toggleModal('The autistic child - Alex')">
+    <img src="images/abdul2.webp" alt="" onclick="toggleModal('Im not gay - Abdul')">
+  </section>
+  <section>
+    <h1>THEIR DUMB FRIENDS</h1>
+    <img src="images/hiba1.jpg" alt="" onclick='toggleModal("You are dating a dude -hiba")'>
+
+    <img src="images/amine1.jpg" alt="" onclick='toggleModal("You are gay -Amine")'>
+
+    <img src="images/hiba2.jpg" alt="" onclick='toggleModal("You are dating a dude -hiba")'>
+
+    <img src="images/amine2.jpg" alt="" onclick='toggleModal("You are gay -Amine")'>
+
+  </section>
+
+  <audio id="myAudio" loop>
+    <source src="images/Birthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal()">&times;</span>
+      <p id="modalText">Text will appear here</p>
+    </div>
+  </div>
+
+  <section style="margin-top: 20px;">
+    <button onclick="stopMusic()" class="buttons">Stop Music</button>
+  </section>
+
+  <section>
+
+    <h1>Enter the Password to Watch the Video:</h1>
+    <p style="margin-bottom: 30px;">Another hint hihihi no it's actually a clue:
+      "In the tender embrace of time's ballet, your birth's whispered symphony entwines with a jubilant ode, celebrating the essence that is uniquely you."</p>
+  <input type="password" id="passwordInput">
+  <button onclick="checkPassword()">Submit</button>
+  
+  <div id="videoContainer" style="display: none;">
+    <iframe width="983" height="553" src="https://www.youtube.com/embed/5VwE9rO3fhE" title="Happy Birthday Alex 💚💚💚💚💚" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  </section>
+  <script src="happy bday.js"></script>  
+</body>
+</html>
